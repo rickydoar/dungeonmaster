@@ -1,0 +1,26 @@
+default-text=#435a6f
+
+html,body, .App, .App-body, #root
+  height 100%
+
+textarea, input, button
+  outline none
+
+input[type=text], textarea
+  border 1px solid #D8E0EA
+  border-right none
+  border-radius 5px 0 0 5px
+  box-sizing border-box
+  color #4C6072
+  display inline-block
+  font-size 12px
+  padding 8px
+  transition border-color 150ms ease-out
+
+  &::placeholder
+    color #9BACBF !important // @stylint ignore
+    font-weight weight-normal !important // @stylint ignore
+
+  &:focus, &:active
+    border-color #3391E9
+    transition border-color 200ms ease-in

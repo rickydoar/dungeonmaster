@@ -1,0 +1,82 @@
+@import './styles/common'
+
+// Main App
+.App
+  color default-text
+  font-family sans serif
+
+  .App-header
+    background-color white
+    border-bottom 1px solid #d5dee6
+    display flex
+    height 56px
+    justify-content center
+
+    .App-logo
+      align-self center
+      height 30px
+
+    .App-title-container
+      display flex
+      flex-direction column
+      justify-content center
+      padding-left 10px
+
+      .App-title-text
+        font-size
+
+    .App-intro
+      font-size large
+
+  .App-body
+    background-color #f7f8fa
+    display flex
+    justify-content center
+    height 100%
+
+// save button
+.save-button
+  background-color #47b881
+  border none
+  border-radius 0 5px 5px 0
+  box-shadow 0 1px 1px 0 rgba(109, 133, 158, 0.5)
+  box-sizing border-box
+  color white
+  cursor pointer
+  display inline-flex
+  font-size 12px
+  height 100%
+  justify-content center
+  letter-spacing 0
+  padding 0 15px
+  text-align center
+  user-select none
+  width 100%
+
+  &:hover:not(.save-disabled)
+    background-color #3faf77
+
+  .save-text
+    display flex
+    align-self center
+
+.save-disabled
+  opacity 0.5
+  cursor auto
+
+// dungeonSteps
+.step-container
+  background-color white
+  border-radius 5px
+  box-shadow rgba(67, 90, 111, 0.416) 0px 0px 1px, rgba(67, 90, 111, 0.3) 0px 2px 4px -2px
+  display flex
+  display flex
+  justify-content center
+  margin 40px 0
+  width 60%
+
+// eventBuilder
+.create-container
+  display flex
+  flex-direction row
+  height 40px
