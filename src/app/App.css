@@ -1,10 +1,3 @@
-html,
-body,
-.App,
-.App-body,
-#root {
-  height: 100%;
-}
 textarea,
 input,
 button {
@@ -62,15 +55,13 @@ textarea:active {
   background-color: #f7f8fa;
   display: flex;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
 }
-.save-button {
-  background-color: #47b881;
+.segment-button {
   border: none;
   border-radius: 0 5px 5px 0;
   box-shadow: 0 1px 1px 0 rgba(109,133,158,0.5);
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-size: 12px;
@@ -82,10 +73,19 @@ textarea:active {
   user-select: none;
   width: 100%;
 }
-.save-button:hover:not(.save-disabled) {
+.segment-button.segment-green {
+  background-color: #47b881;
+  color: #fff;
+}
+.segment-button.segment-green:hover:not(.save-disabled) {
   background-color: #3faf77;
 }
-.save-button .save-text {
+.segment-button.segment-white {
+  background-color: #fff;
+  color: #47b881;
+  border: 1px solid #bdc9d6;
+}
+.segment-button .save-text {
   display: flex;
   align-self: center;
 }
@@ -98,13 +98,24 @@ textarea:active {
   border-radius: 5px;
   box-shadow: rgba(67,90,111,0.416) 0px 0px 1px, rgba(67,90,111,0.3) 0px 2px 4px -2px;
   display: flex;
-  display: flex;
-  justify-content: center;
+  justify-content: start;
   margin: 40px 0;
   width: 60%;
+}
+.step-container .create-event-container {
+  margin-left: 40px;
+}
+.step-container .create-event-header {
+  font-size: 20px;
+  margin: 40px 0 40px 0;
 }
 .create-container {
   display: flex;
   flex-direction: row;
   height: 40px;
+}
+.event-object {
+  margin: 20px 0;
+  height: 40px;
+  border-radius: 5px;
 }

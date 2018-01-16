@@ -32,16 +32,14 @@
     background-color #f7f8fa
     display flex
     justify-content center
-    height 100%
+    min-height 100vh
 
 // save button
-.save-button
-  background-color #47b881
+.segment-button
   border none
   border-radius 0 5px 5px 0
   box-shadow 0 1px 1px 0 rgba(109, 133, 158, 0.5)
   box-sizing border-box
-  color white
   cursor pointer
   display inline-flex
   font-size 12px
@@ -53,8 +51,17 @@
   user-select none
   width 100%
 
-  &:hover:not(.save-disabled)
-    background-color #3faf77
+  &.segment-green
+    background-color #47b881
+    color white
+
+    &:hover:not(.save-disabled)
+      background-color #3faf77
+
+  &.segment-white
+    background-color white
+    color #47b881
+    border 1px solid #BDC9D6
 
   .save-text
     display flex
@@ -70,13 +77,25 @@
   border-radius 5px
   box-shadow rgba(67, 90, 111, 0.416) 0px 0px 1px, rgba(67, 90, 111, 0.3) 0px 2px 4px -2px
   display flex
-  display flex
-  justify-content center
+  justify-content start
   margin 40px 0
   width 60%
+
+  .create-event-container
+    margin-left 40px
+
+  .create-event-header
+    font-size 20px
+    margin 40px 0 40px 0
 
 // eventBuilder
 .create-container
   display flex
   flex-direction row
   height 40px
+
+// eventObject
+.event-object
+  margin 20px 0
+  height 40px
+  border-radius 5px

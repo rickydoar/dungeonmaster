@@ -1,12 +1,12 @@
 import React from 'react';
 
-class FunnelBuilder extends React.Component {
+class PropertyObject extends React.Component {
   render() {
     return (
       <div className='create-funnel-container'>
-        Funnel Builder!
+        {this.props.currentEvent.name}
       </div>
     );
   }
 }
-export default FunnelBuilder;
+export default PropertyObject;

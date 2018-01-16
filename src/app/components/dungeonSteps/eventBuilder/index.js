@@ -12,15 +12,17 @@ class EventBuilder extends React.Component {
           text='Save event'
           events={this.props.events}
           modifyEvents={this.props.modifyEvents}/>
-        {Object.keys(this.props.events).map(event => {
-          return (
-            <EventObject
-              key={event}
-              currentEvent={this.props.events[event]}
-              events={this.props.events}
-              modifyEvents={this.props.modifyEvents}/>
-          )
-        }, this)}
+        <div className='events-container'>
+          {Object.keys(this.props.events).map(event => {
+            return (
+              <EventObject
+                key={event}
+                currentEvent={this.props.events[event]}
+                events={this.props.events}
+                modifyEvents={this.props.modifyEvents}/>
+            )
+          }, this)}
+        </div>
       </div>
     );
   }

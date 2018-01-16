@@ -43,7 +43,7 @@ class InputSave extends React.Component {
           type="text"
           ref={(input) => { this.textInput = input; }}
           onChange={this.updateInputText}/>
-        <div className={'save-button' + (this.state.saveDisabled ? ' save-disabled' : '')} onClick={this.handleSave}>
+        <div className={'segment-button segment-green' + (this.state.saveDisabled ? ' save-disabled' : '')} onClick={this.handleSave}>
           <div className='save-text'>{this.props.text}</div>
         </div>
       </div>
