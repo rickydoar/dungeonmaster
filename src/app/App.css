@@ -85,9 +85,10 @@ textarea:active {
   color: #47b881;
   border: 1px solid #bdc9d6;
 }
-.segment-button .save-text {
+.segment-button .button-text {
   display: flex;
   align-self: center;
+  font-size: 14px;
 }
 .save-disabled {
   opacity: 0.5;
@@ -107,7 +108,7 @@ textarea:active {
 }
 .step-container .create-event-header {
   font-size: 20px;
-  margin: 40px 0 40px 0;
+  margin: 40px 0 20px 0;
 }
 .create-container {
   display: flex;
@@ -115,7 +116,7 @@ textarea:active {
   height: 40px;
 }
 .event-object {
-  margin: 20px 0;
+  margin: 10px 0;
   height: 40px;
   border-radius: 5px;
 }

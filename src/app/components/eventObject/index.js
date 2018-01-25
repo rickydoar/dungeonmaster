@@ -9,7 +9,7 @@ class EventObject extends React.Component {
     return (
       <div className='event-object-container'>
         <div className='event-object segment-button segment-white'>
-          {this.props.currentEvent.name}
+          <div className='button-text'>{this.props.currentEvent.name}</div>
         </div>
         <div className='properties-container'>
           {Object.keys(properties).map(property => {

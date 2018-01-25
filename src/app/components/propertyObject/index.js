@@ -3,7 +3,7 @@ import React from 'react';
 class PropertyObject extends React.Component {
   render() {
     return (
-      <div className='create-funnel-container'>
+      <div className='props-container'>
         {this.props.currentEvent.name}
       </div>
     );
